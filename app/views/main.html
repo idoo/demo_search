@@ -1,0 +1,22 @@
+<div class="autocomplete__inner">
+  <input autocomplete="off"
+         class="input_text"
+         ng-model="search"
+         name="search"
+         placeholder="Search">
+  <label for="search" class="input_text__label">
+    <span class="icon-search"></span>
+    <span>Search</span>
+  </label>
+
+  <div class="autocomplete__dropdown" ng-show="!!search">
+    <div class="autocomplete__dataset">
+      <div class="autocomplete__suggestion"
+           ng-repeat="element in dataset | customSearch:search">
+        <span class="autocomplete__name">{{::element["Name"]}}</span>
+        <span class="autocomplete__type">{{::element["Type"]}}</span>
+        <span class="autocomplete__designed">{{::element["Designed by"]}}</span>
+      </div>
+    </div>
+  </div>
+</div>

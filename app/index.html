@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Devv</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body ng-app="searchApp">
+<div class="header">
+  <div class="navbar navbar-default" role="navigation">
+    <a class="navbar-brand" href="/"></a>
+  </div>
+  <hr class="line">
+</div>
+
+<div class="container" id="content">
+  <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
+</div>
+
+<div class="footer">
+  <hr class="line">
+  <div class="container">
+    <h3 class="flex-item uppercase link">Devv</h3>
+    <h3 class="flex-item uppercase link">Consultion</h3>
+    <h3 class="flex-item uppercase link">Search</h3>
+    <h3 class="flex-item uppercase link">Network</h3>
+  </div>
+  <hr class="line">
+  <div class="container">
+    <div class="flex-item">
+      <p class="link">What is it like?</p>
+      <p class="link">Contact us</p>
+    </div>
+    <div class="flex-item">
+      <p class="link">Services</p>
+      <p class="link">Career</p>
+      <p class="link">Work for us</p>
+    </div>
+    <div class="flex-item">
+      <p class="link">Headhunting</p>
+      <p class="link">Relocation package for Developers</p>
+    </div>
+    <div class="flex-item">
+      <p class="link">Partners</p>
+      <p class="link">Devv Family</p>
+    </div>
+  </div>
+</div>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/services/dataresource.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/filters/customsearch.js"></script>
+</body>
+</html>
